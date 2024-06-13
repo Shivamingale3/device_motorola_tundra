@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libvisualizer \
     libvolumelistener \
+    libaudioroute.vendor \
     libstagefright_softomx_plugin.vendor
 
 PRODUCT_PACKAGES += \
@@ -113,7 +114,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libgui_shim_vendor
+    libgui_shim_vendor \
+    libcamera_metadata.vendor \
+    libexif.vendor \
+    libutilscallstack.vendor \
+    libyuv.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -240,6 +245,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    libhidlmemory.vendor \
     libhidltransport.vendor \
     libhwbinder.vendor
 
@@ -278,7 +284,8 @@ PRODUCT_ENABLE_UFFD_GC := false
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
+    android.hardware.keymaster@4.1.vendor \
+    libion.vendor
 
 # Media
 PRODUCT_PACKAGES += \
@@ -398,8 +405,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libsysutils.vendor \
     android.system.net.netd@1.1.vendor \
-    android.hardware.secure_element@1.0.vendor:64 \
-    libsqlite.vendor
+    android.hardware.secure_element@1.0.vendor:64
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -528,6 +534,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libpng.vendor \
+    libprocessgroup.vendor
 
 # ZRAM writeback
 PRODUCT_PROPERTY_OVERRIDES += \
