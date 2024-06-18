@@ -1,8 +1,8 @@
 #
-# Copyright (C) 2024 Project-Infinity-X
+# Copyright (C) 2024 The RisingOS Android Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_tundra.mk
+    $(LOCAL_DIR)/lineage_tundra.mk
