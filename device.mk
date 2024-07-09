@@ -368,7 +368,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Private keys
--include vendor/infinity-priv/keys/keys.mk
+-include vendor/evolution-priv/keys/keys.mk
 
 # QTI
 PRODUCT_COPY_FILES += \
@@ -499,11 +499,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libnetutils.vendor:64 \
-    libsqlite.vendor:64
 
 # Vulkan
 PRODUCT_COPY_FILES += \
