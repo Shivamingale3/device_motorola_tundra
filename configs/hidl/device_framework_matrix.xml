@@ -51,6 +51,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.sensors</name>
+        <version>1.0</version>
+        <interface>
+	        <name>ISensors</name>
+	        <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.wifi.supplicant</name>
         <version>1.0-2</version>
         <interface>
