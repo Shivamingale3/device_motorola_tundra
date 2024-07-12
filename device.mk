@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2023 The AwakenOS Project
 #
@@ -111,7 +112,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libgui_shim_vendor
+    libgui_shim_vendor \
     libcamera_metadata.vendor \
     libexif.vendor \
     libyuv.vendor \
@@ -217,7 +218,6 @@ PRODUCT_PACKAGES += \
     gnss_antenna_info.conf \
     gps.conf \
     izat.conf \
-    lowi.conf \
     sap.conf
 
 PRODUCT_PACKAGES += \
