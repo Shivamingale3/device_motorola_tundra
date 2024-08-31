@@ -31,21 +31,11 @@ BUILD_FINGERPRINT := motorola/tundra_g/tundra:11/T1SJS33.117-30-3-8/bf62b:user/r
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Matrixx Flags
-MATRIXX_CHIPSET := SD 888+
-MATRIXX_BATTERY := 4400mah
-MATRIXX_DISPLAY := 1080 x 2440
-
-# UDFPS
+# UDFPS support 
 TARGET_HAS_UDFPS := true
 
-# GAPPS
-WITH_GMS := true
+# Blur
+TARGET_ENABLE_BLUR := true
 
-# Other Google Apps
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
+# Bootanimation 
+TARGET_BOOT_ANIMATION_RES := 1080
