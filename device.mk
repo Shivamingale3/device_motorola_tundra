@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2023 The AwakenOS Project
 #
@@ -375,7 +374,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/lahaina/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Private keys
--include vendor/evolution-priv/keys/keys.mk
+#-include vendor/evolution-priv/keys/keys.mk
 
 # QTI
 PRODUCT_COPY_FILES += \
