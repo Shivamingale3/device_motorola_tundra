@@ -31,11 +31,21 @@ BUILD_FINGERPRINT := motorola/tundra_g/tundra:11/T1SJS33.117-30-3-8/bf62b:user/r
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# UDFPS support 
+# UDFPS support
 TARGET_HAS_UDFPS := true
 
 # Blur
 TARGET_ENABLE_BLUR := true
 
-# Bootanimation 
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# BCR (Call recording)
+TARGET_PREBUILT_BCR := true
+
+# Lawnchair (Pixel launcher by default)
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+
+# Custom package installer
+TARGET_USE_CUSTOM_PACKAGE_INSTALLER := true
