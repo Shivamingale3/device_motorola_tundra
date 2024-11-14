@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_tundra.mk
+    $(LOCAL_DIR)/afterlife_tundra.mk

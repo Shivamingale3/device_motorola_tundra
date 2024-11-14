@@ -12,12 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/tundra/device.mk)
 
 # Inherit common infinity configurations
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := infinity_tundra
+PRODUCT_NAME := afterlife_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -31,26 +31,14 @@ BUILD_FINGERPRINT := motorola/tundra_g/tundra:13/T1SJS33M.117-30-3-11/ee9a1f:use
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# Device Status
-INFINITY_BUILD_TYPE := OFFICIAL
-
-# Maintainer Name
-INFINITY_MAINTAINER := "Shivam_Ingale"
-
-# Whether the package supports BLURS
+# CoreGapps
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+# Maintainer
+AFTERLIFE_MAINTAINER := MrTopiA
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+# Blur
 TARGET_SUPPORTS_BLUR := true
-
-# Gapps:
-WITH_GAPPS := true
-
-# Whether the compiled shipped gapps package uses Google Dialer, Messaging, Contacts:
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-
-# ViMusic
-TARGET_BUILD_VIMUSIC := true
-
-# Moto Calculator
-USE_MOTO_CALCULATOR := true
-
-# UDFPS
-TARGET_HAS_UDFPS := true
+# BOOT_ANIMATION
+TARGET_BOOT_ANIMATION_RES := 1080
