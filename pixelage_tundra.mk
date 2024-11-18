@@ -12,12 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/tundra/device.mk)
 
 # Inherit common infinity configurations
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := infinity_tundra
+PRODUCT_NAME := pixelage_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -32,7 +32,7 @@ BUILD_FINGERPRINT := motorola/tundra_g/tundra:15/AP3A.241111.008/ee9a1f:user/rel
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Device Status
-INFINITY_BUILD_TYPE := OFFICIAL
+#INFINITY_BUILD_TYPE := OFFICIAL
 
 # Maintainer Name
 INFINITY_MAINTAINER := "Shivam_Ingale"
@@ -44,13 +44,13 @@ TARGET_SUPPORTS_BLUR := true
 WITH_GAPPS := true
 
 # Whether the compiled shipped gapps package uses Google Dialer, Messaging, Contacts:
-TARGET_BUILD_GOOGLE_TELEPHONY := true
+#TARGET_BUILD_GOOGLE_TELEPHONY := true
 
 # ViMusic
-TARGET_BUILD_VIMUSIC := true
+#TARGET_BUILD_VIMUSIC := true
 
 # Moto Calculator
-USE_MOTO_CALCULATOR := true
+#USE_MOTO_CALCULATOR := true
 
 # UDFPS
 TARGET_HAS_UDFPS := true
